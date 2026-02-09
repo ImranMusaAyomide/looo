@@ -1,0 +1,110 @@
+.hero-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 80px 20px 0 20px;
+    background-color: #ffffff;
+    margin-top: 40px;
+    font-family: 'Inter', sans-serif; /* Or your preferred sans-serif */
+  }
+  
+  /* Top Badge Styling */
+  .badge {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border: 1px solid #e2e2e2;
+    border-radius: 20px;
+    padding: 5px 15px;
+    margin-bottom: 30px;
+    cursor: pointer;
+  }
+  
+  .badge .dot {
+    width: 8px;
+    height: 8px;
+    background-color: #ff5c5c;
+    border-radius: 50%;
+  }
+  
+  .badge p {
+    font-size: 12px;
+    color: #333;
+    margin: 0;
+    font-weight: 500;
+  }
+  
+  /* Typography */
+  .hero-title {
+    font-size: 64px;
+    font-weight: 600;
+    line-height: 1.1;
+    letter-spacing: -1px;
+    margin-bottom: 20px;
+    color: #000;
+  }
+  
+  .hero-subtitle {
+    font-size: 18px;
+    color: #666;
+    line-height: 1.5;
+    margin-bottom: 40px;
+    max-width: 600px;
+  }
+  
+  /* Actions */
+  .download-btn {
+    background-color: #b4b7ff; /* Matching the purple/blue in the image */
+    color: #fff;
+    border: none;
+    padding: 16px 32px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 12px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: transform 0.2s ease;
+  }
+  
+  .download-btn:hover {
+    transform: translateY(-2px);
+  }
+  
+  .availability-link {
+    display: block;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #333;
+    text-decoration: underline;
+    font-weight: 500;
+  }
+  
+  /* Image Section */
+  .hero-image-container {
+    margin-top: 60px;
+    width: 100%;
+    max-width: 800px;
+  }
+  
+  .main-hero-img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+  .marquee {
+    
+  }
+  
+  /* Mobile Responsiveness */
+  @media (max-width: 768px) {
+    .hero-title {
+      font-size: 36px;
+    }
+    
+    .hero-subtitle {
+      font-size: 16px;
+    }
+  }

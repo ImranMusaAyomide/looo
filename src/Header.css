@@ -1,0 +1,65 @@
+.header {
+  width: 100%;
+  height: 100px;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 300px;
+  padding: 0 20px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  .logo {
+    width: 100px;
+    height: 100px;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+.links a {
+  text-decoration: none;
+  margin: 20px;
+  color: #000;
+  font-size: 16px;
+}
+.btn-con button {
+  background-color: #EC3E33;
+  border-radius: 400px;
+  border: none;
+  font-size: 15px;
+  padding: 15px 30px;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .header {
+    height: auto;       
+    padding: 10px;
+    gap: 20px;         
+    flex-direction: row; 
+    position: relative;
+  }
+
+  .links {
+    display: flex;
+    flex-wrap: wrap;   
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+
+  .links a {
+    margin: 10px;   
+    display: none;  
+     font-size: 14px;
+  }
+
+  .btn-con button {
+    width: 100%;       
+    padding: 12px 20px;
+  }
+}
