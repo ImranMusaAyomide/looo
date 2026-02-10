@@ -24,7 +24,7 @@ const HeroSection = () => {
       {/* Buttons & Links */}
       <div className="hero-actions">
         <button className="download-btn">
-          <i className="apple-icon"></i> Download For mac
+          <i className="apple-icon"><i class="fa-brands fa-apple"></i></i> Download For mac
         </button>
         <a href="#" className="availability-link">
           Also available on iOS & Android
@@ -33,7 +33,6 @@ const HeroSection = () => {
 
       {/* Hero Image Block */}
       <div className="hero-image-container">
-        {/* Replace with your actual image path */}
         <img 
           src={heroImage}
           alt="3D Envelope Illustration" 
@@ -42,9 +41,10 @@ const HeroSection = () => {
       </div>
       <span className='marquee'>
         <marquee behavior="scroll" direction="left">
-          <img src={marquee} alt="" />
+          {/* <img src={marquee} alt="" /> */}
         </marquee>
-        <img src={marquee} alt="" /></span>
+        <img src={marquee} alt="" />
+        </span>
     </section>
   );
 };
