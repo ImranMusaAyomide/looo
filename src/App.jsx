@@ -9,7 +9,7 @@ function App() {
       <Header />
       <HeroSection />
       <CardSection />
-  
+      <Summary />
     </div>
   )
 }
