@@ -38,28 +38,50 @@
 
 @media (max-width: 768px) {
   .header {
-    height: auto;       
-    padding: 10px;
-    gap: 20px;         
-    flex-direction: row; 
+    height: auto;
+    min-height: 70px;
+    padding: 12px 16px;
+    gap: 16px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
     position: relative;
   }
 
+  .header .logo {
+    width: 60px;
+    height: 60px;
+  }
+
   .links {
-    display: flex;
-    flex-wrap: wrap;   
-    justify-content: center;
-    margin-bottom: 10px;
+    display: none;
   }
 
   .links a {
-    margin: 10px;   
-    display: none;  
-     font-size: 14px;
+    margin: 10px;
+    font-size: 14px;
   }
 
   .btn-con button {
-    width: 100%;       
     padding: 12px 20px;
+    font-size: 14px;
+    white-space: nowrap;
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    padding: 10px 12px;
+  }
+
+  .header .logo {
+    width: 50px;
+    height: 50px;
+  }
+
+  .btn-con button {
+    padding: 10px 16px;
+    font-size: 13px;
   }
 }
