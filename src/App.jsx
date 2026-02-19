@@ -1,3 +1,4 @@
+import Img from "./Img";
 import CardSection from "./CardSection";
 import Header from "./Header";
 import HeroSection from "./HeroSection";
@@ -10,6 +11,7 @@ function App() {
       <HeroSection />
       <CardSection />
       <Summary />
+      <Img />
     </div>
   )
 }
