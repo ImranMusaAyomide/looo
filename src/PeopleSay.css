@@ -1,0 +1,116 @@
+.ps-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 20px;
+    background-color: #ffffff;
+  }
+  
+  .ps-label {
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    color: #333;
+    margin-bottom: 12px;
+    text-align: center;
+  }
+  
+  .ps-title {
+    font-size: clamp(24px, 5vw, 36px);
+    font-weight: 900;
+    line-height: 1.1;
+    color: #000;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .ps-card {
+    background-color: #fff9f5; /* Matching the cream tone */
+    border: 1.5px solid #ffdbd0; /* Matching the peach border */
+    border-radius: 20px;
+    padding: 40px 30px;
+    max-width: 650px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .ps-quote {
+    font-size: 17px;
+    line-height: 1.6;
+    color: #444;
+    margin-bottom: 30px;
+    font-weight: 400;
+  }
+  
+  .ps-profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 25px;
+  }
+  
+  .ps-avatar {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 2px solid #fff;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  }
+  
+  .ps-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .ps-name {
+    font-weight: 800;
+    font-size: 15px;
+    color: #111;
+  }
+  
+  .ps-navigation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .ps-nav-arrow {
+    background-color: #ff4d4d; /* Matching the red action color */
+    color: white;
+    border: none;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s ease;
+  }
+  
+  .ps-nav-arrow:hover {
+    transform: scale(1.1);
+  }
+  
+  .ps-dots {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+  }
+  
+  .ps-dot {
+    width: 10px;
+    height: 5px;
+    background-color: #e0e0e0;
+    border-radius: 4px;
+  }
+  
+  .ps-dot.ps-active {
+    background-color: #ff4d4d;
+    width: 28px; /* Elongated active state */
+  }

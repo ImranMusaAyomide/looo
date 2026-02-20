@@ -3,6 +3,8 @@ import CardSection from "./CardSection";
 import Header from "./Header";
 import HeroSection from "./HeroSection";
 import Summary from "./Summary";
+import PeopleSay from "./PeopleSay";
+import Footer from "./Footer";
 
 function App() {
   return (
@@ -12,6 +14,8 @@ function App() {
       <CardSection />
       <Summary />
       <Img />
+      <PeopleSay />
+      <Footer />
     </div>
   )
 }
