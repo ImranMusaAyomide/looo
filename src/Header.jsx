@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import Logo from './assets/Logo-Top.svg' 
 import './Header.css'
 
@@ -11,11 +12,11 @@ const Header = () => {
       <div className='links'>
         <a href="#">Template</a>
         <a href="#">Use Cases</a>
-        <a href="#"> Blog </a>
-        <a href="#"> About </a>
+        <Link to="/blog">Blog</Link>
+        <a href="#">About</a>
       </div>
       <div className='btn-con'>
-        <button><i class="fa-brands fa-apple"></i> Download for Mac</button>
+        <button><i className="fa-brands fa-apple"></i> Download for Mac</button>
       </div>
     </section>
   )
