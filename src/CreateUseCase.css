@@ -1,0 +1,422 @@
+/* ============================================
+   Create Use Case – Page layout
+   ============================================ */
+
+.create-use-case {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  color: #0f172a;
+  background: linear-gradient(180deg, #fafafa 0%, #f1f5f9 100%);
+}
+
+/* ============================================
+   HEADER – Page title & intro
+   ============================================ */
+
+.create-use-case-header {
+  padding: 120px 6vw 48px;
+  max-width: 720px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.create-use-case-breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.create-use-case-breadcrumb a {
+  color: #64748b;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.create-use-case-breadcrumb a:hover {
+  color: #EC3E33;
+}
+
+.breadcrumb-sep {
+  color: #cbd5e1;
+  user-select: none;
+}
+
+.breadcrumb-current {
+  color: #0f172a;
+  font-weight: 600;
+}
+
+.create-use-case-kicker {
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  font-size: 11px;
+  font-weight: 600;
+  color: #EC3E33;
+  margin-bottom: 10px;
+}
+
+.create-use-case-title {
+  font-size: clamp(28px, 4vw, 40px);
+  line-height: 1.2;
+  font-weight: 700;
+  margin-bottom: 14px;
+  letter-spacing: -0.02em;
+}
+
+.create-use-case-subtitle {
+  font-size: 17px;
+  line-height: 1.6;
+  color: #475569;
+  max-width: 36rem;
+}
+
+/* ============================================
+   MAIN – Form & cards
+   ============================================ */
+
+.create-use-case-main {
+  flex: 1;
+  padding: 0 6vw 32px;
+  max-width: 720px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.create-use-case-form {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.create-use-case-card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 28px 32px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06), 0 4px 12px rgba(0, 0, 0, 0.04);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  transition: box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.create-use-case-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06), 0 8px 24px rgba(236, 62, 51, 0.06);
+  border-color: rgba(236, 62, 51, 0.15);
+}
+
+.create-use-case-card-title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 4px;
+  color: #0f172a;
+}
+
+.create-use-case-card-desc {
+  font-size: 14px;
+  color: #64748b;
+  margin-bottom: 22px;
+}
+
+/* Form fields */
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group:last-child {
+  margin-bottom: 0;
+}
+
+.form-group label {
+  display: block;
+  font-size: 13px;
+  font-weight: 600;
+  color: #334155;
+  margin-bottom: 8px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 12px 14px;
+  font-size: 15px;
+  font-family: inherit;
+  color: #0f172a;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: #94a3b8;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #EC3E33;
+  box-shadow: 0 0 0 3px rgba(236, 62, 51, 0.15);
+}
+
+.form-group select {
+  cursor: pointer;
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%2364748b' d='M6 8L1 3h10z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 14px center;
+  padding-right: 36px;
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+/* Steps section */
+.steps-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.step-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.step-number {
+  flex-shrink: 0;
+  width: 28px;
+  height: 28px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #EC3E33;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 600;
+  border-radius: 8px;
+}
+
+.step-input {
+  flex: 1;
+  padding: 10px 14px;
+  font-size: 14px;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  background: #f8fafc;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.step-input:focus {
+  outline: none;
+  border-color: #EC3E33;
+  box-shadow: 0 0 0 2px rgba(236, 62, 51, 0.12);
+}
+
+.step-remove {
+  flex-shrink: 0;
+  width: 36px;
+  height: 36px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  color: #64748b;
+  font-size: 20px;
+  line-height: 1;
+  cursor: pointer;
+  transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+
+.step-remove:hover:not(:disabled) {
+  background: #fef2f2;
+  color: #EC3E33;
+  border-color: rgba(236, 62, 51, 0.3);
+}
+
+.step-remove:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.add-step-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 16px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #EC3E33;
+  background: transparent;
+  border: 1px dashed rgba(236, 62, 51, 0.5);
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+}
+
+.add-step-btn:hover {
+  background: rgba(236, 62, 51, 0.06);
+  border-color: #EC3E33;
+}
+
+.add-step-icon {
+  font-size: 18px;
+  line-height: 1;
+  font-weight: 400;
+}
+
+/* ============================================
+   FOOTER – Actions & tip
+   ============================================ */
+
+.create-use-case-footer {
+  margin-top: auto;
+  padding: 24px 6vw 40px;
+  background: #fff;
+  border-top: 1px solid #e2e8f0;
+  box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.03);
+}
+
+.create-use-case-footer-inner {
+  max-width: 720px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.create-use-case-footer-tip {
+  font-size: 13px;
+  color: #64748b;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.tip-icon {
+  font-size: 16px;
+}
+
+.create-use-case-actions {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.create-use-case-cancel {
+  padding: 12px 20px;
+  font-size: 15px;
+  font-weight: 500;
+  color: #64748b;
+  text-decoration: none;
+  border-radius: 400px;
+  transition: color 0.2s ease, background 0.2s ease;
+}
+
+.create-use-case-cancel:hover {
+  color: #0f172a;
+  background: #f1f5f9;
+}
+
+.create-use-case-submit {
+  padding: 14px 28px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #fff;
+  background: #EC3E33;
+  border: none;
+  border-radius: 400px;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.15s ease, box-shadow 0.2s ease;
+}
+
+.create-use-case-submit:hover {
+  background: #d6362b;
+  box-shadow: 0 4px 14px rgba(236, 62, 51, 0.35);
+}
+
+.create-use-case-submit:active {
+  transform: scale(0.98);
+}
+
+/* ============================================
+   Responsive
+   ============================================ */
+
+@media (max-width: 768px) {
+  .create-use-case-header {
+    padding-top: 100px;
+    padding-bottom: 36px;
+  }
+
+  .create-use-case-title {
+    font-size: 26px;
+  }
+
+  .create-use-case-subtitle {
+    font-size: 16px;
+  }
+
+  .create-use-case-card {
+    padding: 22px 20px;
+  }
+
+  .create-use-case-card-title {
+    font-size: 17px;
+  }
+
+  .create-use-case-footer-inner {
+    flex-direction: column;
+    align-items: stretch;
+    text-align: center;
+  }
+
+  .create-use-case-actions {
+    justify-content: center;
+  }
+
+  .create-use-case-footer-tip {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .create-use-case-header,
+  .create-use-case-main,
+  .create-use-case-footer {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .create-use-case-breadcrumb {
+    font-size: 12px;
+  }
+
+  .step-row {
+    flex-wrap: wrap;
+  }
+
+  .step-input {
+    flex: 1 1 100%;
+    order: 2;
+    margin-left: 40px;
+  }
+
+  .step-remove {
+    order: 1;
+    margin-left: auto;
+  }
+}

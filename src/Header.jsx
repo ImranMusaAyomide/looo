@@ -11,7 +11,7 @@ const Header = () => {
       </div>
       <div className='links'>
         <a href="#">Template</a>
-        <a href="#">Use Cases</a>
+        <Link to="/create-use-case">Use Cases</Link>
         <Link to="/blog">Blog</Link>
         <Link to="/about-us">About Us</Link>
       </div>

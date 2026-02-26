@@ -8,6 +8,7 @@ import PeopleSay from "./PeopleSay";
 import Footer from "./Footer";
 import Blog from "./Blog";
 import AboutUs from "./AboutUs";
+import CreateUseCase from "./CreateUseCase";
 
 function Home() {
   return (
@@ -45,6 +46,16 @@ function App() {
               <>
                 <Header />
                 <AboutUs />
+                <Footer />
+              </>
+            }
+          />
+          <Route
+            path="/create-use-case"
+            element={
+              <>
+                <Header />
+                <CreateUseCase />
                 <Footer />
               </>
             }
