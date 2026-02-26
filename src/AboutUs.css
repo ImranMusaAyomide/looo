@@ -1,0 +1,225 @@
+.about-us {
+  padding: 72px 6vw 96px;
+  max-width: 1100px;
+  margin: 0 auto;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: #0f172a;
+}
+
+/* Hero */
+.about-hero {
+  margin-bottom: 64px;
+  max-width: 42rem;
+}
+
+.about-kicker {
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  font-size: 11px;
+  font-weight: 600;
+  color: #4f46e5;
+  margin-bottom: 10px;
+}
+
+.about-title {
+  font-size: clamp(32px, 4vw, 44px);
+  line-height: 1.15;
+  margin-bottom: 18px;
+  font-weight: 700;
+}
+
+.about-subtitle {
+  font-size: 17px;
+  line-height: 1.65;
+  color: #475569;
+}
+
+/* Story block */
+.about-story {
+  margin-bottom: 72px;
+  border-radius: 24px;
+  padding: 36px 40px;
+  background: linear-gradient(135deg, #f8fafc 0%, #eef2ff 50%, #e0e7ff 100%);
+  border: 1px solid rgba(99, 102, 241, 0.2);
+  box-shadow: 0 14px 40px rgba(79, 70, 229, 0.08);
+}
+
+.about-story-inner {
+  max-width: 36rem;
+}
+
+.about-story-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #312e81;
+  margin-bottom: 14px;
+}
+
+.about-story-text {
+  font-size: 15px;
+  line-height: 1.75;
+  color: #4338ca;
+}
+
+/* Values */
+.about-values {
+  margin-bottom: 72px;
+}
+
+.about-values-heading {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 24px;
+  color: #0f172a;
+}
+
+.about-values-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+}
+
+.about-value-card {
+  border-radius: 18px;
+  padding: 24px 22px;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 14px 30px rgba(15, 23, 42, 0.06);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.about-value-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 20px 40px rgba(79, 70, 229, 0.12);
+  border-color: rgba(99, 102, 241, 0.35);
+}
+
+.about-value-title {
+  font-size: 17px;
+  font-weight: 600;
+  color: #312e81;
+  margin-bottom: 10px;
+  line-height: 1.3;
+}
+
+.about-value-text {
+  font-size: 14px;
+  line-height: 1.65;
+  color: #64748b;
+}
+
+/* CTA */
+.about-cta {
+  border-radius: 24px;
+  padding: 40px 36px;
+  background: linear-gradient(120deg, #111827, #0f172a, #1e293b);
+  color: #e5e7eb;
+  box-shadow: 0 18px 50px rgba(15, 23, 42, 0.55);
+}
+
+.about-cta-inner {
+  text-align: center;
+  max-width: 28rem;
+  margin: 0 auto;
+}
+
+.about-cta h2 {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.about-cta p {
+  font-size: 14px;
+  color: #9ca3af;
+  margin-bottom: 24px;
+  line-height: 1.6;
+}
+
+.about-cta-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.about-cta-primary {
+  padding: 12px 22px;
+  border-radius: 999px;
+  border: none;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  background: #f97316;
+  color: #111827;
+  cursor: pointer;
+  transition: transform 0.12s ease, box-shadow 0.12s ease, background 0.12s ease;
+  box-shadow: 0 14px 32px rgba(249, 115, 22, 0.3);
+}
+
+.about-cta-primary:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 18px 44px rgba(249, 115, 22, 0.4);
+  background: #fb923c;
+}
+
+.about-cta-secondary {
+  padding: 12px 22px;
+  border-radius: 999px;
+  border: 2px solid #4b5563;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  background: transparent;
+  color: #e5e7eb;
+  cursor: pointer;
+  transition: border-color 0.12s ease, background 0.12s ease, color 0.12s ease;
+}
+
+.about-cta-secondary:hover {
+  border-color: #6366f1;
+  background: rgba(99, 102, 241, 0.15);
+  color: #c7d2fe;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .about-values-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 640px) {
+  .about-us {
+    padding: 56px 5vw 72px;
+  }
+
+  .about-hero {
+    margin-bottom: 48px;
+  }
+
+  .about-story {
+    padding: 28px 24px;
+    margin-bottom: 56px;
+  }
+
+  .about-values-grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 16px;
+  }
+
+  .about-cta {
+    padding: 32px 24px;
+  }
+
+  .about-cta-buttons {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .about-cta-primary,
+  .about-cta-secondary {
+    width: 100%;
+  }
+}

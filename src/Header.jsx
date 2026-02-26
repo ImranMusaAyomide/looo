@@ -13,10 +13,10 @@ const Header = () => {
         <a href="#">Template</a>
         <a href="#">Use Cases</a>
         <Link to="/blog">Blog</Link>
-        <a href="#">About</a>
+        <Link to="/about-us">About Us</Link>
       </div>
       <div className='btn-con'>
-        <button><i className="fa-brands fa-apple"></i> Download for Mac</button>
+         <button><i className="fa-brands fa-apple"></i> Download for Mac</button>
       </div>
     </section>
   )

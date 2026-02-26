@@ -7,6 +7,7 @@ import Summary from "./Summary";
 import PeopleSay from "./PeopleSay";
 import Footer from "./Footer";
 import Blog from "./Blog";
+import AboutUs from "./AboutUs";
 
 function Home() {
   return (
@@ -34,6 +35,16 @@ function App() {
               <>
                 <Header />
                 <Blog />
+                <Footer />
+              </>
+            }
+          />
+          <Route
+            path="/about-us"
+            element={
+              <>
+                <Header />
+                <AboutUs />
                 <Footer />
               </>
             }
